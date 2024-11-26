@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Задание 7</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="my.js"></script>
+</head>
+
+<body>
+    <header class="header container-fluid">
+        <div class="row align-items-center justify-content-between ">
+            <div class="col-6 col-lg-2">
+                <img class="logo img-fluid" src="logo.png" alt="Лого">
+            </div>
+            <div class="col-6 col-lg-2 text-end text-lg-start ">
+                <div class="header-title">КубГУ</div>
+            </div>
+            <nav class="menu-btns col-12 col-lg-8  d-flex flex-column flex-lg-row justify-content-lg-end">
+                <a class="btn btn-primary " href="#sources">Гиперссылки</a>
+                <a class="btn btn-primary " href="#tab">Таблица</a>
+                <a class="btn btn-primary " href="#form">Форма</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="content container-lg ">
+        <div class="row">
+            <div class="big-table col-12 order-lg-3 order-2">
+                <h2 id="tab">Расписание на понедельник</h3>
+                <table class="table table-bordered text-center">
+                    <thead>
+                        <tr>
+                            <td colspan="2">Курс</td>
+                            <td colspan="2">2</td>
+                        </tr>
+                        <tr>
+                            <th>№</th>
+                            <th>Время</th>
+                            <th>27/1</th>
+                            <th>27/2</th>
+                        </tr>    
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="2">1</td>
+                            <td rowspan="2">8:00-9:20</td>
+                            <td>Дифференциальные уравнения</td>
+                            <td>Компьютерные сети</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Математический анализ</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>9:30-10:50</td>
+                            <td colspan="2">Разработка WEB интерфейса</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>11:10-12:30</td>
+                            <td colspan="2">ООП</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">4</td>
+                            <td rowspan="2">12:40-14:00</td>
+                            <td rowspan="2"></td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>Диффуры</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="col-12 order-lg-2 order-3">
+                <div class="s">
+                    <h2 id="sources">Гиперссылки:</h3>
+                    <ul>
+                        <li><a href="http://kubsu.ru"> абсолютная гиперссылку на главную страницу сайта kubsu.ru</a></li>
+        
+                        <li><a href="https://kubsu.ru"> абсолютная на главную сайта kubsu.ru в протоколе https</a></li>
+        
+                        <li><a href="https://kubsu.ru">
+                                <img src="https://avatars.mds.yandex.net/i?id=4c79e0f3fa8efff9bb736bd36b859fbc0cf14414-9065739-images-thumbs&n=13" 
+                                alt="КубГУ"
+                                width="300" 
+                                height="300">
+                            </a>
+                        </li>
+        
+                        <li><a href="/ru/science"> сокращенная ссылку на внутреннюю страницу</a></li>
+        
+                        <li><a href="/index.php"> сокращенную ссылку на главную страницу</a></li>
+        
+                        <li><a href="#reg">ссылка на фрагмент текущей страницы</a></li>
+        
+                        <li><a href="https://kubsu.ru/page?param1=value1&param2=value2&param3=value3">ссылка с тремя параметрами в
+                                URL</a></li>
+                        <li><a href="https://kubsu.ru/page?id=090303"></a> ссылка с параметром id в URL</li>
+        
+                        <li><a href="./schedule"></a>относительная на страницу в текущем каталоге</li>
+        
+                        <li><a href="./about/page.html">относительная на страницу в каталоге about</a></li>
+        
+                        <li><a href="../schedule">относительная на страницу в каталоге уровнем выше текущего</a></li>
+        
+                        <li><a href="../../schedule"></a> относительная на страницу в каталоге двумя уровнями выше</li>
+        
+                        <li>
+                            <p>Куба́нский государственный университет, сокращённо <a href="https://kubsu.ru">КубГУ</a> — одно из ведущих
+                                высших учебных заведений, расположенное в Краснодаре. Является одним из крупнейших и старейших
+                                университетов юга России.</p>
+                        </li>
+                        <li><a href="https://ru.wikipedia.org/wiki/Кубанский_государственный_университет#История">ссылка на фрагмент страницы стороннего сайта</a></li>
+        
+                        <li>
+                            <img src="https://avatars.mds.yandex.net/i?id=4c79e0f3fa8efff9bb736bd36b859fbc0cf14414-9065739-images-thumbs&n=13" usemap="#image-map" alt="Kubsu Image" height="300" width="300">
+        
+                            <map name="image-map">
+                        <!-- Прямоугольная область -->
+                                <area shape="rect" coords="34,44,270,350" href="https://kubsu.ru" alt="Rectangle Area">
+                            </map>
+        
+        
+                            <img src="https://avatars.mds.yandex.net/i?id=8de54cf261fbf393072df6c0df0c2cda4ceda26d-5605491-images-thumbs&n=13" usemap="#image-map2" alt="Example Image" height="300" width="300">
+        
+                            <map name="image-map2">
+                        <!-- Круглая область -->
+                                <area shape="circle" coords="150,150,75" href="https://www.kubsu.ru/ru/node/31500" alt="Circle Area">
+                            </map>
+                        </li>
+        
+                        <li><a href="#"> ссылка с пустым href</a></li>
+        
+                        <li><a onclick="surprise();" tabindex="0">Ссылка без href</a></li>
+        
+                        <li><a href="https://kubsu.ru" rel="nofollow">ссылка, по которой запрещен переход поисковикам</a></li>
+        
+                        <noindex><li><a href="https://kubsu.ru" >запрещенная для индексации поисковиками</a></li></noindex>
+        
+                        <li><p>нумерованный список ссылок</p>
+                            <ol>
+                                <li>
+                                    <a href="http://kubsu.ru" title="Главная страница КубГУ"> КубГУ</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.kubsu.ru/ru/education" title="КубГУ/Образование"> КубГУ Образование</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.kubsu.ru/ru/science" title="КубГУ/Наука"> КубГУ Наука</a>
+                                </li>
+                            </ol>
+                        </li>
+        
+                        <li><a href="ftp://user:pass123@adress.ru/Temp/file.txt">ссылка на файл на сервере FTP с авторизацией</a></li>
+                        <li><a href="http://kubsu.ru">Абсолютная гиперссылка на главную страницу сайта kubsu.ru</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-12 order-5">
+                <div class="forms">
+                    <h2 id="form">Пожалуйста, введите свои данные для регистрации</h3>
+                    <form>
+                        ФИО<br>
+                        <input name="text"><br>
+                    </form>
+        
+                    <form>
+                        Номер телефона<br>
+                        <input type="tel" value="+7"><br>
+                    </form>
+        
+                    <form>
+                        Адрес электронной почты<br>
+                        <input type="email" value="@gmail.com"><br>
+                    </form>
+        
+                    <form>
+                        Дата рождения<br>
+                        <input type="date"><br>
+                    </form>
+        
+                    <form>
+                        Пол<br>
+                        <input type="radio" name="gender" value="man"> Мужской <br>
+                        <input type="radio" name="gender" value="woman"> Женский <br>
+                    </form>
+        
+                    <form>
+                        Любимый язык программирования<br>
+                        <select name="lang[]" [] size="5" multiple>
+                            <option value="1">Pascal</option>
+                            <option value="2">C</option>
+                            <option value="3" selected>C++</option>
+                            <option value="4">Java Script</option>
+                            <option value="5">PHP</option>
+                            <option value="6">Python</option>
+                            <option value="7">Java</option>
+                            <option value="8">Haskel</option>
+                            <option value="9">Clojure</option>
+                            <option value="10">Prolog</option>
+                            <option value="11">Scala</option>
+                        </select>
+                    </form>
+        
+                    <form>
+                        Биография<br>
+                        <textarea id="story" name="story"></textarea>
+                    </form>
+        
+                    <form>
+                        <input type="checkbox"> С контрактом ознакомлен(а) <br>
+                    </form>
+        
+                    <form name="form" method="post" action="index.html">
+                        <button type="submit">Отправить</button>
+                    </form>
+                </div>
+            </div>
+
+
+            <div class="col-12 mt-5 mb-5 p-3 order-4 " id="calc">
+                <h1>Калькулятор стоимости заказа</h1>
+                <label for="quantity"><strong>Количество:</strong></label>
+                <input class="p-1 mb-1" type="number" id="quantity" min="1" value="1">
+                <label><strong>Товар:</strong></label>
+                
+                <div style="display: flex;">
+                    <input type="radio" name="type" id="first" value="58000" checked>
+                    <label for="first">iPhone 14 (58 000 руб.)</label>
+                </div>
+                <div style="display: flex;">
+                    <input type="radio" name="type" id="second" value="112000">
+                    <label for="second">iPhone 14 Pro (112 000 руб.)</label>
+                </div>
+                <div style="display: flex;">
+                    <input type="radio" name="type" id="third" value="80000">
+                    <label for="third">iPhone 15 (80 000 руб.)</label>
+                </div>
+                <div style="display: flex;">
+                    <input type="radio" name="type" id="fourth" value="118000">
+                    <label for="fourth">iPhone 15 Pro (118 000 руб.)</label>
+                </div>
+                <div style="display: flex;">
+                    <input type="radio" name="type" id="fifth" value="101000">
+                    <label for="fifth">iPhone 16 (101 000 руб.)</label>
+                </div>
+                <div style="display: flex;">
+                    <input type="radio" name="type" id="sixth" value="130000">
+                    <label for="sixth">iPhone 16 Pro (130 000 руб.)</label>
+                </div>
+
+
+                <div id="memory">
+                    <label for="option"><strong>Память:</strong></label>
+                    <select id="option">
+                        <option value="0">128 ГБ</option>
+                        <option value="10000">256 ГБ (+10 000 руб.)</option>
+                        <option value="20000">512 ГБ(+20 000 руб.)</option>
+                    </select><br>
+                </div>
+
+                <div id="checkboxes">
+                    <label for="property"><strong>Комплект:</strong></label>
+                    <div style="display: flex;">
+                        <input type="checkbox" name="check" id="property1" value="2000">
+                        <label for="property1">Зарядный блок (+2 000 руб.)</label>
+                    </div><br>
+                    <div style="display: flex;">
+                        <input type="checkbox" name="check" id="property2" value="1000">
+                        <label for="property2">Защитное стекло (+1 000 руб.)</label>
+                    </div><br>
+                    <div style="display: flex;">
+                        <input type="checkbox" name="check" id="property3" value="1500">
+                        <label for="property3">Защитный чехол (+1 500 руб.)</label>
+                    </div><br>
+                    <div style="display: flex;">
+                        <input type="checkbox" name="check" id="property4" value="0">
+                        <label for="property4">Пакет (+0 руб.)</label>
+                    </div><br>
+                </div>
+                <div class = "mt-2" id="result"></div>
+            </div><br>
+
+
+            <div class="gallery-container col-12 mt-5 mb-5 p-3 order-1">
+                <div class="gallery-slider">
+                    <div><img src="1.jpg" alt="Image 1"></div>
+                    <div><img src="2.jpg" alt="Image 2"></div>
+                    <div><img src="3.jpg" alt="Image 3"></div>
+                    <div><img src="4.jpg" alt="Image 4"></div>
+                    <div><img src="5.jpg" alt="Image 5"></div>
+                    <div><img src="6.jpg" alt="Image 6"></div>
+                    <div><img src="7.jpg" alt="Image 7"></div>
+                    <div><img src="8.jpg" alt="Image 8"></div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <footer class="footer container-fluid mt-4">
+        <div class="row ">
+            <div class="col-12 text-left">
+                <p>(с) Баринова Анастасия</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

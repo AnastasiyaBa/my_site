@@ -1,0 +1,179 @@
+
+
+/* Mobile first: мобильная версия */
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    background-color: #f0ceebc5;
+}
+
+
+.content{
+    border-radius:35px ;
+    padding: 17px;
+    background-color: #b698ddcf;
+    margin: auto;
+    max-width:90%;
+}
+
+/* Шапка */
+.header {
+
+    padding: 20px;
+}
+
+.header-title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #000000b1;
+}
+
+.menu-btns a {
+    border-color:#683da1c0;
+    background-color: #683da1c0;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.menu-btns a:hover {
+    border-color:#683da1c0 ;
+    background-color: #f0ceebc5;
+    color: #683da1c0;
+}
+
+/* Заголовки */
+h2 {
+    background-color: #efd9ecd1;
+    border-radius: 15px;
+    font-size: 22px;
+    padding: 4px;
+}
+
+/* Таблица */
+
+.table {
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+
+.table tbody tr:nth-child(odd) {
+    background-color: #efd9ecd1;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #F4F2EF;
+}
+
+.table td {
+    border: 2px solid #000;
+}
+
+.table thead{
+    background-color: #F4F2EF;
+}
+
+/* Ссылки */
+.s a {
+    text-decoration: none;
+    color: #000;
+}
+
+.s a:hover {
+    text-decoration: none;
+    color: #2a133b;
+}
+
+/* Footer */
+.footer {
+    height: 100px;
+    text-align: center;
+}
+
+
+/*calculator*/
+
+#calc {
+    border: 3px solid #151414;
+    border-radius: 20px;
+    background-color:#11111176;
+    color: #eaeaea;
+}
+
+label {
+    display: block;
+}
+
+input[type="number"] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+select {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+#result {
+    font-size: 27px;
+    font-weight: bold;
+}
+
+
+/*Галерея---->*/
+
+.gallery-container {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+}
+.gallery-slider .slick-slide {
+    margin: 0 10px; /* Расстояние между изображениями */
+}
+.slick-slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+.slick-dots {
+    position: static;
+    margin-top: 15px;
+}
+
+
+
+@media (max-width: 725px){
+    .big-table {
+        overflow: auto;
+        position: relative;
+    }
+    .big-table table {
+        display: inline-block;
+        vertical-align: top;
+        max-width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+
+@media (min-width: 800px) {
+
+    .header-title {
+        font-size: 30px;
+    }
+
+    h2{
+        font-size: 30px;
+    }
+
+    body{
+        font-size: 25px;
+    }
+
+    .menu-btns a{
+        margin: 10px;
+    }
+}
